@@ -55,4 +55,5 @@ ENV CLASSPATH /opt/jars/guava-31.1-jre.jar:/opt/jars/commons-math3-3.6.1/commons
 
 # kpi files
 RUN cd /opt && git clone https://github.com/droeatumn/kpi.git
+WORKDIR /tmp
 CMD ["/opt/kpi/main.nf"]
